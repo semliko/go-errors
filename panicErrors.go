@@ -28,7 +28,7 @@ func recoveryFunction() {
 	if err := recover(); err != nil {
 		var newError error
 		newError = errors.New("This is my new error with trace")
-		log.Println("panic occurred:", err)
+		log.Println("panic occurred:", newError)
 	}
 }
 
